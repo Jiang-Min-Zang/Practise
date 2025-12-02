@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hants">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>日本旅遊推薦</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./資源包/styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <section class="logo">
+        <img src="./資源包/images/網站Logo.svg" alt="日本旅遊網logo" />
+        <h1>2023日本旅遊推薦</h1>
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <a href=""><i class="fa-solid fa-plane"></i> 日本旅遊</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-user"></i> 會員登入</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-calendar-days"></i> 預約行程</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-mobile"></i> 聯絡我們</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="background-img">
+        <div class="filter"></div>
+        <h3>休閒空間，特殊假期，<br />安排一趟日本旅遊行程，放鬆身心</h3>
+      </section>
+    </main>
+    <script>
+      setInterval(() => {
+        let topBackground = document.querySelector("section.background-img");
+        if (
+          topBackground.style.backgroundImage ==
+          'url("../資源包/images/日本櫻花.jpg")'
+        ) {
+          topBackground.style.backgroundImage =
+            'url("../資源包/images/京都古城.jpg")';
+        } else if (
+          topBackground.style.backgroundImage ==
+          'url("../資源包/images/京都古城.jpg")'
+        ) {
+          topBackground.style.backgroundImage =
+            'url("../資源包/images/大阪街頭.jpg")';
+        } else {
+          topBackground.style.backgroundImage =
+            'url("../資源包/images/日本櫻花.jpg")';
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>

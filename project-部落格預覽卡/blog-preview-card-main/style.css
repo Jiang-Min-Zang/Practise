@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: text-preset-s, sans-serif;
+}
+body {
+  background-color: yellow;
+}
+
+div.container {
+  background-color: white;
+  width: 384px;
+  height: 556px;
+  border-radius: 10%;
+}
+
+div.text h3 {
+  display: inline;
+  background-color: yellow;
+  padding: 0 8px;
+}
