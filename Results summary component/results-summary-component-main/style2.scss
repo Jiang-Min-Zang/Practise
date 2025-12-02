@@ -29,7 +29,7 @@ body {
     padding: 10px;
     width: auto;
     height: auto;
-    background-color: green;
+    // background-color: green;
   }
   .average-left {
     display: flex;
@@ -51,7 +51,7 @@ body {
     text-align: center;
     width: 200px;
     height: auto;
-    background-color: purple;
+    // background-color: purple;
   }
   .text2 {
     color: white;
@@ -60,33 +60,65 @@ body {
 }
 .right {
   display: flex;
+  // justify-content: center;
   flex-direction: column;
   width: 45%;
   height: 430px;
-  background-color: red;
+  // background-color: red;
 
   .header-right {
-    background-color: aqua;
+    padding: 10px;
   }
   .FractionBox {
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    margin: 20px;
+
+    // margin: 20px;
     height: 240px;
     width: 230px;
-    background-color: yellow;
+    // background-color: yellow;
+    gap: 10px;
 
     .Fraction {
-      height: 160px;
-      width: 160px;
-      background-color: green;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 10px;
+      height: 50px;
+      width: 230px;
+      // background-color: green;
+    }
+    .Fraction1 {
+      background-color: rgb(255, 246, 247);
+      // color: red;
+    }
+    .Fraction2 {
+      background-color: rgb(255, 250, 244);
+    }
+    .Fraction3 {
+      background-color: rgb(242, 253, 249);
+    }
+    .Fraction4 {
+      background-color: rgb(244, 244, 254);
+    }
+    .box {
+      display: flex;
+      align-items: center;
+      > span {
+        padding-left: 5px;
+      }
     }
   }
   .result {
-    width: auto;
-    height: auto;
-    text-align: center;
+    width: 244px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
     color: rgb(188, 197, 214);
     background-color: rgb(48, 59, 89);
+    // margin-top: 30px;
   }
 }
