@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 375px;
+  //   height: 100vh;
+  //   width: 375px;
+  background-color: white;
+  color: white;
+
+  .overall-card {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 50px 0px;
+    // height: 90%;
+    // background-color: aqua;
+
+    .card-orange {
+      padding: 30px;
+      height: 33.3%;
+      background-color: rgb(226, 133, 37);
+    }
+    .card-blue {
+      padding: 30px;
+      height: 33.3%;
+      background-color: rgb(1, 105, 114);
+    }
+    .card-green {
+      padding: 30px;
+      height: 33.3%;
+      background-color: rgb(0, 64, 63);
+    }
+    .car-img {
+      height: 20%;
+    }
+    .car-centent {
+      height: 60%;
+      margin: 10px 0px;
+      .centent-title {
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: 15px;
+      }
+      .centent-text {
+        line-height: 1.5;
+      }
+    }
+    .car-span {
+      margin-top: 15px;
+      height: 20%;
+      .span-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        width: 170px;
+        height: 50px;
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}
+
+@media (min-width: 441px) {
+  body {
+    .overall-card {
+      width: 90%;
+      height: auto;
+      flex-direction: row;
+      .card-orange {
+        width: 33.3%;
+        height: 100vh;
+      }
+      .card-blue {
+        width: 33.3%;
+        height: 100vh;
+      }
+      .card-green {
+        width: 33.3%;
+        height: 100vh;
+      }
+    }
+  }
+}
