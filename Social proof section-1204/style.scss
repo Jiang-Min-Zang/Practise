@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+.WEB {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  width: 100%;
+  height: 100vh;
+  // background-color: rgb(127, 146, 140);
+
+  @media (min-width: 1024px) {
+    padding: 50px 350px;
+  }
+}
+
+.Upside-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+
+  .Title-left {
+    display: flex;
+    // text-align: center;
+    flex-direction: column;
+    width: 420px;
+    height: 250px;
+    // background-color: yellow;
+
+    .Title-left-h1 {
+      color: rgb(87, 31, 82);
+      font-size: 20px;
+      font-weight: 800;
+      // background-color: aqua;
+      height: auto;
+    }
+    .Title-left-p {
+      padding-top: 10px;
+      color: rgb(192, 180, 190);
+      line-height: 1.5;
+      height: 50%;
+    }
+  }
+
+  .Title-right {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 580px;
+    height: 250px;
+    // background-color: aqua;
+
+    .Star-frame {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      background-color: rgb(247, 242, 248);
+      width: 450px;
+      height: 50px;
+      color: rgb(73, 39, 72);
+
+      .Star {
+        padding-right: 20px;
+      }
+
+      &.Star1 {
+        margin-right: 100px;
+      }
+
+      &.Star3 {
+        margin-left: 100px;
+      }
+    }
+    // .Star-frame.Star3 {
+    //   margin-left: 100px;
+    // }
+  }
+}
+
+.Below-Card {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .Crad1 {
+    padding: 30px;
+    color: white;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 240px;
+    border-radius: 10px;
+    background-color: rgb(81, 31, 80);
+  }
+  // .Crad1:hover {
+  //   background-color: red;
+  // }
+  .Crad2 {
+    padding: 30px;
+    color: white;
+    width: 350px;
+    height: 240px;
+    border-radius: 10px;
+    background-color: rgb(81, 31, 80);
+  }
+  .Crad3 {
+    padding: 30px;
+    color: white;
+    margin-top: 70px;
+    width: 350px;
+    height: 240px;
+    border-radius: 10px;
+    background-color: rgb(81, 31, 80);
+  }
+
+  .photo {
+    display: flex;
+    height: 50%;
+    align-items: center;
+    .photo-left {
+      > img {
+        border-radius: 50%;
+        width: 50%;
+        // height: 50%;
+      }
+    }
+    .photo-right {
+      display: flex;
+      flex-direction: column;
+      margin-left: -30px;
+      line-height: 1.5;
+    }
+    .span2 {
+      color: rgb(209, 122, 177);
+    }
+  }
+}

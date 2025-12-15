@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(230, 239, 246);
+  padding: 100px 40px;
+  min-width: 440px;
+  max-height: 667px;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+}
+.frame .headline {
+  width: auto;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  color: rgb(205, 208, 215);
+  font-size: 22px;
+}
+.frame .headline .headline-title {
+  margin: 20px 0px;
+  color: rgb(51, 156, 152);
+  font-size: 30px;
+}
+.frame .headline .headline-middle {
+  font-size: 23px;
+  color: rgb(200, 218, 108);
+  padding-right: 30px;
+  margin-bottom: 15px;
+}
+.frame .detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: auto;
+  height: auto;
+  background-color: aqua;
+}
+.frame .price {
+  width: auto;
+  height: auto;
+  background-color: rgb(43, 179, 177);
+  padding: 20px;
+  color: white;
+}
+.frame .price .price-title {
+  font-size: 20px;
+  margin: 10px 0px;
+}
+.frame .price .price-number {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px 0px;
+}
+.frame .price .price-number .price-number-left {
+  font-size: 50px;
+}
+.frame .price .price-number .price-number-right {
+  margin-left: 15px;
+}
+.frame .price .price-span {
+  display: flex;
+  width: 90%;
+  height: 20%;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 15px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(191, 223, 50);
+}
+.frame .about {
+  width: auto;
+  height: auto;
+  background-color: rgb(74, 190, 189);
+  padding: 20px;
+  color: white;
+}
+.frame .about .about-title {
+  font-size: 20px;
+  margin: 10px 0px;
+}
+.frame .about .about-text {
+  line-height: 1.5;
+}
+
+@media (min-width: 440px) {
+  body {
+    padding: 0;
+  }
+  .frame {
+    height: 100vh;
+  }
+  .frame .headline {
+    padding: 50px 30px;
+    height: 40%;
+    width: 100%;
+  }
+  .frame .headline .headline-title {
+    font-size: 40px;
+  }
+  .frame .headline .headline-middle {
+    margin: 30px 0px;
+  }
+  .frame .detail {
+    height: 60%;
+    width: 100%;
+    flex-direction: row;
+  }
+  .frame .price {
+    padding: 50px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    font-size: 25px;
+  }
+  .frame .price .price-title {
+    font-size: 40px;
+  }
+  .frame .price .price-text {
+    padding-bottom: 100px;
+  }
+  .frame .price .price-number {
+    margin: 20px 0;
+  }
+  .frame .price .price-number .price-number-left {
+    font-size: 55px;
+  }
+  .frame .price .price-number .price-number-right {
+    font-size: 25px;
+  }
+  .frame .price .price-span {
+    font-size: 30px;
+  }
+  .frame .about {
+    padding: 50px 30px;
+    width: 50%;
+  }
+  .frame .about .about-title {
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+  .frame .about .about-text {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+}/*# sourceMappingURL=style.css.map */
