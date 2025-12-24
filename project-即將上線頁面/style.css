@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.web-page {
+  min-width: 375px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  gap: 20px;
+}
+.web-page .summary {
+  text-align: center;
+  margin-top: 60px;
+}
+.web-page .data-img > img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
