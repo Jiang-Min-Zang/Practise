@@ -8,26 +8,116 @@
   min-width: 375px;
   background-color: rgb(255, 255, 255);
   display: flex;
-  // justify-content: center;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   height: auto;
+  padding: 10px;
   gap: 20px;
 
   .summary {
     text-align: center;
     margin-top: 60px;
+
+    .summary-title {
+      font-size: 35px;
+    }
+
+    .summary-middle {
+      margin-top: 30px;
+      font-size: 35px;
+    }
+    .summary-text {
+      margin-top: 5px;
+    }
   }
 
   .input-box {
+    margin-top: 10px;
+
+    .input-style {
+      padding-left: 10px;
+      width: 250px;
+      height: 30px;
+      border-radius: 25px;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+    .input-style.error {
+      border: 1px solid red;
+    }
+    .input-error-text {
+      font-size: 12px;
+      color: red;
+      margin: 5px 0 0 10px;
+      display: none;
+    }
+    //控制錯誤文字顯示 無效 找原因中
+    .input-error-text.show {
+      display: flex;
+    }
+
+    .input-box-span {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5px;
+      background-color: blue;
+      text-align: center;
+      color: white;
+      border-radius: 25px;
+      height: 30px;
+    }
   }
 
   .data-img {
+    margin-top: 60px;
     > img {
-      width: 100%;
+      width: 95%;
+    }
+  }
+  .link-account {
+    margin-top: 40px;
+    .link-account-img {
+      > img {
+        cursor: pointer;
+        width: 20%;
+      }
+      display: flex;
+      justify-content: space-around;
     }
   }
 }
 
 @media (min-width: 768px) {
+  .web-page {
+    .summary {
+      .summary-title {
+        font-size: 55px;
+      }
+      .summary-middle {
+        font-size: 65px;
+      }
+      .summary-text {
+        font-size: 30px;
+      }
+    }
+
+    .input-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .input-style {
+        width: 500px;
+        height: 50px;
+      }
+      .input-box-span {
+        margin-left: 20px;
+        width: 150px;
+        height: 50px;
+      }
+    }
+  }
 }

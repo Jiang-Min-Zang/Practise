@@ -8,15 +8,102 @@
   min-width: 375px;
   background-color: rgb(255, 255, 255);
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   height: auto;
+  padding: 10px;
   gap: 20px;
 }
 .web-page .summary {
   text-align: center;
   margin-top: 60px;
 }
+.web-page .summary .summary-title {
+  font-size: 35px;
+}
+.web-page .summary .summary-middle {
+  margin-top: 30px;
+  font-size: 35px;
+}
+.web-page .summary .summary-text {
+  margin-top: 5px;
+}
+.web-page .input-box {
+  margin-top: 10px;
+}
+.web-page .input-box .input-style {
+  padding-left: 10px;
+  width: 250px;
+  height: 30px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.web-page .input-box .input-style.error {
+  border: 1px solid red;
+}
+.web-page .input-box .input-error-text {
+  font-size: 12px;
+  color: red;
+  margin: 5px 0 0 10px;
+  display: none;
+}
+.web-page .input-box .input-error-text.show {
+  display: flex;
+}
+.web-page .input-box .input-box-span {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  background-color: blue;
+  text-align: center;
+  color: white;
+  border-radius: 25px;
+  height: 30px;
+}
+.web-page .data-img {
+  margin-top: 60px;
+}
 .web-page .data-img > img {
-  width: 100%;
+  width: 95%;
+}
+.web-page .link-account {
+  margin-top: 40px;
+}
+.web-page .link-account .link-account-img {
+  display: flex;
+  justify-content: space-around;
+}
+.web-page .link-account .link-account-img > img {
+  cursor: pointer;
+  width: 20%;
+}
+
+@media (min-width: 768px) {
+  .web-page .summary .summary-title {
+    font-size: 55px;
+  }
+  .web-page .summary .summary-middle {
+    font-size: 65px;
+  }
+  .web-page .summary .summary-text {
+    font-size: 30px;
+  }
+  .web-page .input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .web-page .input-box .input-style {
+    width: 500px;
+    height: 50px;
+  }
+  .web-page .input-box .input-box-span {
+    margin-left: 20px;
+    width: 150px;
+    height: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */
