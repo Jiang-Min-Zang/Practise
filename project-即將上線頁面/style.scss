@@ -54,7 +54,7 @@
     }
     //控制錯誤文字顯示 無效 找原因中
     .input-error-text.show {
-      display: flex;
+      display: block;
     }
 
     .input-box-span {

@@ -50,7 +50,7 @@
   display: none;
 }
 .web-page .input-box .input-error-text.show {
-  display: flex;
+  display: block;
 }
 .web-page .input-box .input-box-span {
   cursor: pointer;
