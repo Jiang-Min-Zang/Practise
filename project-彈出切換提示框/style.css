@@ -34,27 +34,35 @@ body {
   line-height: 1.1;
   color: rgb(72, 80, 98);
 }
-.container .share-hide {
-  display: none;
+.container .footer {
+  position: absolute;
+}
+.container .footer .share-hide {
+  display: flex;
   padding: 10px 25px;
   height: 54px;
   align-items: center;
   justify-content: space-around;
   border-radius: 0 0 25px 25px;
+  color: white;
   background-color: rgb(73, 85, 107);
+  position: relative;
+  z-index: 1;
 }
-.container .profile {
+.container .footer .profile {
   padding: 10px 25px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: relative;
+  z-index: 0;
 }
-.container .profile .profile-img > img {
+.container .footer .profile .profile-img > img {
   height: 50px;
   width: 50px;
   border-radius: 50px;
 }
-.container .profile .profile-text {
+.container .footer .profile .profile-text {
   padding-right: 80px;
   line-height: 1.2;
 }
@@ -78,5 +86,22 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+  .container .card-range .share-hide {
+    position: relative;
+    left: 330px;
+    display: none;
+    border-radius: 10px;
+    width: 45%;
+  }
+  .container .card-range .share-hide .share-hide-triangle {
+    position: relative;
+    left: 150px;
+    top: 35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: rgb(73, 85, 107) transparent transparent transparent;
   }
 }/*# sourceMappingURL=style.css.map */
