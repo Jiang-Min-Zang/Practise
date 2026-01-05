@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(238, 82, 82);
+  background-color: rgb(191, 235, 72);
   height: 30px;
   width: 30px;
   border-radius: 50%;
@@ -60,6 +60,7 @@ body {
   position: absolute;
   z-index: -1;
   bottom: 0;
+  left: 0;
 }
 .container .footer .profile {
   padding: 0px 25px;
@@ -97,17 +98,19 @@ body {
     flex-direction: column;
     justify-content: space-around;
   }
-  .container .card-range .footer {
+  .container .card-range .footer .profile-share {
     position: relative;
   }
-  .container .card-range .share-hide {
+  .container .card-range .footer .profile-share .share-hide {
     position: absolute;
-    left: 150px;
-    bottom: 50px;
+    left: 50%;
+    bottom: 50%;
     border-radius: 10px;
+    min-width: 300px;
     z-index: 0;
+    transform: translate(-50%, -60%);
   }
-  .container .card-range .share-hide .share-hide-triangle {
+  .container .card-range .footer .profile-share .share-hide .share-hide-triangle {
     position: absolute;
     top: 50px;
     width: 0;
