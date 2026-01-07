@@ -4,7 +4,12 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(103, 75, 177);
+}
+
 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +29,9 @@
 }
 .container .page-background .page-title > img {
   width: 50%;
+}
+.container .page-background .page-middle-web {
+  margin-bottom: 50px;
 }
 .container .page-background .page-img {
   margin: 50px 0px;
@@ -57,13 +65,22 @@
   border-radius: 25px;
   width: 200px;
   height: 30px;
+  cursor: pointer;
+}
+.container .page-background .main-centent .centent-span:hover {
+  background-color: pink;
+  width: 250px;
+  height: 35px;
 }
 .container .page-background .footer {
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  position: absolute;
+  margin-bottom: 8px;
+  inset: auto 0 0 0;
 }
 .container .page-background .footer .footer-img {
+  cursor: pointer;
   padding: 0px 5px;
 }
 .container .page-background .footer .footer-img > img {
@@ -71,18 +88,41 @@
 }
 
 @media (min-width: 769px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
   .container .page-background {
     padding: 40px;
+    min-height: auto;
+    max-height: 800px;
     background-image: url("./images/bg-desktop.svg");
   }
   .container .page-background .page-middle-web {
     display: flex;
     justify-content: space-around;
+    height: 80vh;
+    align-items: flex-start;
+    padding-top: 50px;
+    margin-bottom: 0;
+  }
+  .container .page-background .main-centent {
+    width: 40%;
+    margin-left: 20px;
   }
   .container .page-background .page-title > img {
     width: 25%;
   }
+  .container .page-background .page-img {
+    margin: 0;
+  }
   .container .page-background .page-img > img {
     width: 100%;
+  }
+  .container .page-background .footer {
+    inset: auto 0 0 80%;
+  }
+  .container .page-background .footer .footer-img > img {
+    width: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
