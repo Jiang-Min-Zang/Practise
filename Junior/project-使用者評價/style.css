@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 375px;
+}
+
+.card-style-Daniel {
+  background-color: "green";
+  width: 1000px;
+  height: 500px;
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */

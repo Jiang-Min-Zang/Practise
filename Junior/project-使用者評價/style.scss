@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin card(
+  $height: 300px,
+  $width: 500px,
+  $backgroundColor: "red",
+  $fontSize: 14px
+) {
+  background-color: $backgroundColor;
+  width: $width;
+  height: $height;
+  font-size: $fontSize;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 375px;
+}
+.card-style-Daniel {
+  @include card(500px, 1000px, "green");
+}
