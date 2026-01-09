@@ -3,25 +3,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: rgb(231, 230, 235);
+}
 
 @mixin card(
-  $height: 300px,
-  $width: 500px,
-  $backgroundColor: "red",
+  $height: auto,
+  $width: auto,
+  $backgroundColor: white,
   $fontSize: 14px
 ) {
   background-color: $backgroundColor;
   width: $width;
   height: $height;
   font-size: $fontSize;
+  border-radius: 10px;
 }
 .container {
+  min-width: 375px;
+}
+.page-crad {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-width: 375px;
+  margin: 25px;
+
+  .card-style-Daniel {
+    @include card();
+  }
 }
-// .card-style-Daniel {
-//   @include card(500px, 1000px, "green");
-// }
+
+@media (min-width: 769px) {
+}

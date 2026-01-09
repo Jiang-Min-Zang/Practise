@@ -4,10 +4,25 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(231, 230, 235);
+}
+
 .container {
+  min-width: 375px;
+}
+
+.page-crad {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-width: 375px;
+  margin: 25px;
+}
+.page-crad .card-style-Daniel {
+  background-color: white;
+  width: auto;
+  height: auto;
+  font-size: 14px;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
