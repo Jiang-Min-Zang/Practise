@@ -11,13 +11,15 @@ body {
   $height: auto,
   $width: auto,
   $backgroundColor: white,
-  $fontSize: 14px
+  $color: rgb(75, 84, 98)
 ) {
   background-color: $backgroundColor;
   width: $width;
   height: $height;
-  font-size: $fontSize;
+  font-size: 14px;
+  color: $color;
   border-radius: 10px;
+  padding: 20px;
 }
 .container {
   min-width: 375px;
@@ -28,11 +30,93 @@ body {
   align-items: center;
   flex-direction: column;
   margin: 25px;
+  gap: 15px;
+
+  .person {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+
+    .person-img {
+      margin-right: 15px;
+      > img {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .comment-title {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold; //400
+    padding-right: 60px;
+  }
+
+  .comment-text {
+    margin-top: 15px;
+  }
 
   .card-style-Daniel {
+    @include card(auto, auto, rgb(115, 63, 200), white);
+  }
+
+  .card-style-Jonathan {
+    @include card(auto, auto, rgb(73, 85, 107), white);
+  }
+
+  .card-style-Jeanette {
+    @include card();
+  }
+
+  .card-style-Patrick {
+    @include card(auto, auto, rgb(25, 31, 45), white);
+  }
+
+  .card-style-Kira {
     @include card();
   }
 }
 
 @media (min-width: 769px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .page-crad {
+      display: grid;
+      max-width: 100%;
+      width: 1100px;
+      margin: 0 auto;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      grid-auto-rows: 1fr;
+      align-items: stretch;
+
+      grid-template-areas:
+        "a a b c"
+        "d e e c";
+
+      .card-style-Daniel {
+        grid-area: a;
+        grid-column: span 2;
+      }
+      .card-style-Jonathan {
+        grid-area: b;
+        grid-column: span 1;
+      }
+      .card-style-Jeanette {
+        grid-area: d;
+        grid-column: span 1;
+      }
+      .card-style-Kira {
+        grid-area: c;
+        grid-column: span 1;
+      }
+      .card-style-Patrick {
+        grid-area: e;
+        grid-column: span 2;
+      }
+    }
+  }
 }

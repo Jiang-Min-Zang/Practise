@@ -18,11 +18,109 @@ body {
   align-items: center;
   flex-direction: column;
   margin: 25px;
+  gap: 15px;
+}
+.page-crad .person {
+  display: flex;
+  align-items: center;
+}
+.page-crad .person .person-img {
+  margin-right: 15px;
+}
+.page-crad .person .person-img > img {
+  border-radius: 50%;
+}
+.page-crad .comment-title {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  padding-right: 60px;
+}
+.page-crad .comment-text {
+  margin-top: 15px;
 }
 .page-crad .card-style-Daniel {
+  background-color: rgb(115, 63, 200);
+  width: auto;
+  height: auto;
+  font-size: 14px;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.page-crad .card-style-Jonathan {
+  background-color: rgb(73, 85, 107);
+  width: auto;
+  height: auto;
+  font-size: 14px;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.page-crad .card-style-Jeanette {
   background-color: white;
   width: auto;
   height: auto;
   font-size: 14px;
+  color: rgb(75, 84, 98);
   border-radius: 10px;
+  padding: 20px;
+}
+.page-crad .card-style-Patrick {
+  background-color: rgb(25, 31, 45);
+  width: auto;
+  height: auto;
+  font-size: 14px;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.page-crad .card-style-Kira {
+  background-color: white;
+  width: auto;
+  height: auto;
+  font-size: 14px;
+  color: rgb(75, 84, 98);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+@media (min-width: 769px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .container .page-crad {
+    display: grid;
+    max-width: 100%;
+    width: 1100px;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    grid-auto-rows: 1fr;
+    align-items: stretch;
+    grid-template-areas: "a a b c" "d e e c";
+  }
+  .container .page-crad .card-style-Daniel {
+    grid-area: a;
+    grid-column: span 2;
+  }
+  .container .page-crad .card-style-Jonathan {
+    grid-area: b;
+    grid-column: span 1;
+  }
+  .container .page-crad .card-style-Jeanette {
+    grid-area: d;
+    grid-column: span 1;
+  }
+  .container .page-crad .card-style-Kira {
+    grid-area: c;
+    grid-column: span 1;
+  }
+  .container .page-crad .card-style-Patrick {
+    grid-area: e;
+    grid-column: span 2;
+  }
 }/*# sourceMappingURL=style.css.map */
