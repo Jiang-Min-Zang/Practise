@@ -54,6 +54,12 @@ body {
   line-height: 1.2;
   color: rgb(171, 161, 172);
 }
+.container .faq-box .question .question-internal.active {
+  display: flex;
+}
+.container .faq-box .question .question.active img {
+  content: url("/assets/images/icon-minus.svg");
+}
 
 @media (min-width: 769px) {
   body {

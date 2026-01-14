@@ -55,6 +55,12 @@ body {
         line-height: 1.2;
         color: rgb(171, 161, 172);
       }
+      .question-internal.active {
+        display: flex;
+      }
+      .question.active img {
+        content: url("/assets/images/icon-minus.svg");
+      }
     }
   }
 }
