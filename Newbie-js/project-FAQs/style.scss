@@ -47,6 +47,9 @@ body {
         justify-content: space-between;
         align-items: center;
         font-weight: bold;
+        .span-close {
+          display: none;
+        }
       }
 
       .question-internal {

@@ -4,18 +4,6 @@
 //   console.log("hi");
 // }
 
-// const buttons = document.querySelectorAll(".question-internal");
-
-// function send(index) {
-//   // button.style.display = "flex";
-//   console.log(index, "你點擊了按鈕 ${index + 1}");
-//   console.log(button, "button");
-// }
-
-// buttons.forEach((button, index) => {
-//   button.addEventListener("click", () => send(index));
-// });
-
 //找到你所有的按鈕
 var spans = document.querySelectorAll(".question-external-span span");
 //加上按鈕點擊事件
@@ -27,5 +15,27 @@ for (var i = 0; i < spans.length; i++) {
     var questionInternal = question.querySelector(".question-internal");
     // console.log(questionInternal, "-----questionInternal");
     questionInternal.classList.toggle("active");
+  });
+}
+
+var buttons = document.querySelectorAll(".question-external-span");
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", function () {
+    var question = this.closest(".question"); //這個沒加也沒關係
+    var plusIcon = this.querySelector(".span-open");
+    var minusIcon = this.querySelector(".span-close");
+    var content = question.querySelector(".question-internal");
+
+    if (content.style.display === "flex") {
+      // 關閉
+      content.style.display = "none";
+      plusIcon.style.display = "inline-block";
+      minusIcon.style.display = "none";
+    } else {
+      // 打開
+      content.style.display = "flex";
+      plusIcon.style.display = "none";
+      minusIcon.style.display = "inline-block";
+    }
   });
 }

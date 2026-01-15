@@ -48,6 +48,9 @@ body {
   align-items: center;
   font-weight: bold;
 }
+.container .faq-box .question .question-external .span-close {
+  display: none;
+}
 .container .faq-box .question .question-internal {
   display: none;
   margin-top: 10px;
