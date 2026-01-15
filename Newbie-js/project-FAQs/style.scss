@@ -71,5 +71,9 @@ body {
 @media (min-width: 769px) {
   body {
     background-image: url(/assets/images/background-pattern-desktop.svg);
+
+    .faq-box {
+      max-width: 475px; //簡單改一下 不想多花時間調整
+    }
   }
 }

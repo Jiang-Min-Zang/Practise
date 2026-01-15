@@ -68,4 +68,7 @@ body {
   body {
     background-image: url(/assets/images/background-pattern-desktop.svg);
   }
+  body .faq-box {
+    max-width: 475px;
+  }
 }/*# sourceMappingURL=style.css.map */
