@@ -52,11 +52,40 @@ body {
       }
       .write-box {
         margin-top: 15px;
+        padding: 25px;
         background-color: white;
         display: flex;
         flex-direction: column;
         border-radius: 10px;
-        gap: 10px;
+        gap: 12px;
+
+        .inputbox {
+          width: 80vw;
+          height: 30px;
+          border: 1px solid #ccc;
+          padding: 20px 5px;
+          // outline: solid;
+        }
+
+        .receive-span {
+          border-radius: 5px;
+          background-color: rgb(55, 204, 138);
+          box-shadow: 0 2px 0 rgb(71, 176, 129);
+          color: white;
+          font-weight: bold;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .warning-slogan {
+          text-align: center;
+          color: #ccc;
+        }
+        .red-type {
+          color: red;
+        }
       }
     }
   }
