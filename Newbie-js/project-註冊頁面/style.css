@@ -64,6 +64,13 @@ body {
   border: 1px solid #ccc;
   padding: 20px 5px;
 }
+.container .register .write-scope .write-box .input-error-text {
+  display: none;
+  justify-content: right;
+  font-size: 12px;
+  font-family: monospace;
+  color: red;
+}
 .container .register .write-scope .write-box .receive-span {
   border-radius: 5px;
   background-color: rgb(55, 204, 138);
@@ -78,6 +85,7 @@ body {
 .container .register .write-scope .write-box .warning-slogan {
   text-align: center;
   color: #ccc;
+  font-size: 12px;
 }
 .container .register .write-scope .write-box .red-type {
   color: red;
@@ -86,5 +94,25 @@ body {
 @media (min-width: 768px) {
   .container {
     background-image: url(./images/bg-intro-desktop.png);
+  }
+  .container .register {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .container .register .text-description {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    gap: 20px;
+    padding: 50px;
+  }
+  .container .register .text-description .text-title {
+    font-size: 40px;
+  }
+  .container .register .text-description .text-centent {
+    font-size: 18px;
+  }
+  .container .register .write-scope .write-box .inputbox {
+    width: 45vw;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -39,19 +39,28 @@
             <div class="first-name">
               <input class="inputbox" type="text" placeholder="First Name" />
             </div>
-            <div id="error-text" class="input-error-text">
+            <div id="first-error" class="input-error-text">
               <p>First name cannot be empty</p>
             </div>
             <div class="last-name">
               <input class="inputbox" type="text" placeholder="Last Name" />
             </div>
+            <div id="lastname-error" class="input-error-text">
+              <p>Last name cannot be empty</p>
+            </div>
             <div class="email">
               <input class="inputbox" type="text" placeholder="Email Address" />
+            </div>
+            <div id="email-error" class="input-error-text">
+              <p>Looks like this is not an email</p>
             </div>
             <div class="passward">
               <input class="inputbox" type="text" placeholder="Password" />
             </div>
-            <div class="receive-span">
+            <div id="passward-error" class="input-error-text">
+              <p>Password cannot be empty</p>
+            </div>
+            <div onclick="send()" class="receive-span">
               <span>Claim your free trial </span>
             </div>
             <div class="warning-slogan">
@@ -81,5 +90,6 @@
 
   By clicking the button, you are agreeing to our Terms and Services
    -->
+    <script src="/function.js"></script>
   </body>
 </html>
