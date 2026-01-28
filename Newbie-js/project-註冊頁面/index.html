@@ -36,30 +36,62 @@
             </div>
           </div>
           <div class="write-box">
-            <div class="first-name">
-              <input class="inputbox" type="text" placeholder="First Name" />
+            <div class="field">
+              <input
+                class="inputbox"
+                data-required
+                data-error="請輸入正確First Name"
+                data-type="firstname"
+                type="text"
+                placeholder="First Name"
+              />
+              <div id="first-error" class="input-error-text">
+                <p>First name cannot be empty</p>
+              </div>
             </div>
-            <div id="first-error" class="input-error-text">
-              <p>First name cannot be empty</p>
+
+            <div class="field">
+              <input
+                class="inputbox"
+                data-required
+                data-error="請輸入正確Last Name"
+                data-type="lastname"
+                type="text"
+                placeholder="Last Name"
+              />
+              <div id="lastname-error" class="input-error-text">
+                <p>Last name cannot be empty</p>
+              </div>
             </div>
-            <div class="last-name">
-              <input class="inputbox" type="text" placeholder="Last Name" />
+
+            <div class="field">
+              <input
+                class="inputbox"
+                data-required
+                data-error="請輸入正確信箱"
+                data-type="email"
+                type="text"
+                placeholder="Email Address"
+              />
+              <div id="email-error" class="input-error-text">
+                <p>Looks like this is not an email</p>
+              </div>
             </div>
-            <div id="lastname-error" class="input-error-text">
-              <p>Last name cannot be empty</p>
+
+            <div class="field">
+              <input
+                class="inputbox"
+                data-required
+                data-error="請輸入正確密碼"
+                data-type="password"
+                type="text"
+                placeholder="Password"
+              />
+              <div id="passward-error" class="input-error-text">
+                <p>Password cannot be empty</p>
+              </div>
             </div>
-            <div class="email">
-              <input class="inputbox" type="text" placeholder="Email Address" />
-            </div>
-            <div id="email-error" class="input-error-text">
-              <p>Looks like this is not an email</p>
-            </div>
-            <div class="passward">
-              <input class="inputbox" type="text" placeholder="Password" />
-            </div>
-            <div id="passward-error" class="input-error-text">
-              <p>Password cannot be empty</p>
-            </div>
+
             <div onclick="send()" class="receive-span">
               <span>Claim your free trial </span>
             </div>
