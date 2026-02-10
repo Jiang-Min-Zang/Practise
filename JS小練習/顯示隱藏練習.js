@@ -36,3 +36,8 @@ button.forEach((btn) => {
     }
   });
 });
+// buttons.forEach()  每個商品按鈕都加事件
+// btn.closest('.product')  找到按鈕所在的商品區塊
+// querySelector('.short').full → 取得簡短/完整文字
+// classList.toggle('hide')  切換顯示或隱藏
+// if/else → 改按鈕文字

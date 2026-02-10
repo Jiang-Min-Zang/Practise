@@ -12,3 +12,4 @@ tabs.forEach((tab, index) => {
     contents[index].classList.remove("hide");
   });
 });
+//如果順序變了就會壞掉 可以使用data-tab的方式優化

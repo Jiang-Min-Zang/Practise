@@ -7,9 +7,20 @@
     <title>Document</title>
   </head>
   <body>
-    <input type="text" id="username" placeholder="輸入名稱" />
+    <!-- <input type="text" id="username" placeholder="輸入名稱" />
     <button id="submitBtn">送出</button>
-    <p id="error" class="hide">請輸入名稱</p>
+    <p id="error" class="hide">請輸入名稱</p> 
+    初階題目 -->
+
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="帳號" />
+      <p class="error hide">請輸入帳號</p>
+
+      <input type="password" id="password" placeholder="密碼" />
+      <p class="error hide">請輸入密碼</p>
+
+      <button type="submit">登入</button>
+    </form>
 
     <script src="./表單錯誤提示.js"></script>
   </body>
