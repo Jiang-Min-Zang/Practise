@@ -181,6 +181,29 @@
       }
     }
   }
+
+  .user-reviews {
+    text-align: center;
+    .user-title {
+      margin-top: 2rem;
+      font-size: 25px;
+      font-weight: bold;
+      color: rgb(171, 172, 176);
+    }
+    .user-box {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 15px;
+      > img {
+        width: 75px;
+        border-radius: 50%;
+      }
+      .user-img {
+        margin: 30px 0px;
+      }
+    }
+  }
 }
 
 @media (min-width: 769px) {
