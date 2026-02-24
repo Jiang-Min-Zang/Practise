@@ -28,6 +28,7 @@
   color: white;
 }
 .container .header-box .header {
+  position: relative;
   padding: 0px 20px;
   display: flex;
   flex-direction: row;
@@ -37,7 +38,37 @@
   font-weight: bold;
 }
 .container .header-box .header .nav {
+  position: absolute;
+  padding: 20px 0;
+  top: 160%;
+  right: 20px;
+  width: 200px;
+  background: white;
   display: none;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+.container .header-box .header .nav a {
+  text-decoration: none;
+}
+.container .header-box .header .nav.active {
+  display: flex;
+}
+.container .header-box .header .nav a:hover {
+  background-color: #ffd54f;
+  border-radius: 25px;
+  padding: 8px;
+}
+.container .header-box .header .triangle {
+  position: absolute;
+  top: -17px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 50px 50px;
+  border-color: transparent transparent #ffffff transparent;
 }
 .container .header-box .header .hamburger {
   background-color: transparent;
@@ -213,7 +244,13 @@
   .container .header-box .header .nav {
     display: flex;
     flex-direction: row;
+    position: static;
     gap: 3rem;
+    width: auto;
+    background: none;
+  }
+  .container .header-box .header .triangle {
+    display: none;
   }
   .container .header-box .header-centent {
     margin-top: 6rem;
@@ -240,7 +277,7 @@
   .container .introduction .both-box .cherry-box {
     background-image: url(/images/desktop/image-graphic-design.jpg);
     width: 50vw;
-    height: 90%;
+    height: auto;
   }
   .container .introduction .both-box .cherry-box .cherry-title {
     padding-top: 14rem;
@@ -248,7 +285,7 @@
   .container .introduction .both-box .orange-box {
     background-image: url(/images/desktop/image-photography.jpg);
     width: 50vw;
-    height: 100%;
+    height: auto;
   }
   .container .introduction .both-box .orange-box .orange-title {
     padding-top: 15rem;

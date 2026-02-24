@@ -31,6 +31,7 @@
     color: white;
 
     .header {
+      position: relative;
       padding: 0px 20px;
       display: flex;
       flex-direction: row;
@@ -40,7 +41,39 @@
       font-weight: bold;
 
       .nav {
+        position: absolute;
+        padding: 20px 0;
+        top: 160%;
+        right: 20px;
+        width: 200px;
+        background: white;
         display: none;
+        align-items: center;
+        gap: 1rem;
+        flex-direction: column;
+
+        a {
+          text-decoration: none;
+        }
+      }
+      .nav.active {
+        display: flex;
+      }
+
+      .nav a:hover {
+        background-color: #ffd54f;
+        border-radius: 25px;
+        padding: 8px;
+      }
+      .triangle {
+        position: absolute;
+        top: -17px;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #ffffff transparent;
       }
       .hamburger {
         background-color: transparent;
@@ -237,7 +270,13 @@
         .nav {
           display: flex;
           flex-direction: row;
+          position: static;
           gap: 3rem;
+          width: auto;
+          background: none;
+        }
+        .triangle {
+          display: none;
         }
       }
       .header-centent {
@@ -275,7 +314,7 @@
         .cherry-box {
           background-image: url(/images/desktop/image-graphic-design.jpg);
           width: 50vw;
-          height: 90%;
+          height: auto;
           .cherry-title {
             padding-top: 14rem;
           }
@@ -283,7 +322,7 @@
         .orange-box {
           background-image: url(/images/desktop/image-photography.jpg);
           width: 50vw;
-          height: 100%;
+          height: auto;
           .orange-title {
             padding-top: 15rem;
           }
