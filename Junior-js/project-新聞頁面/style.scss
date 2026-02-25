@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hide {
+  display: none;
+}
+hr {
+  color: white;
+}
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.container {
+  padding: 30px 15px;
+  background-color: rgb(254, 253, 249);
+
+  .header-box {
+    .header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .nav {
+        display: none;
+      }
+      .nav a:hover {
+        color: red;
+      }
+      .nav .active {
+        display: flex;
+      }
+    }
+  }
+  .main-box {
+    margin-top: 2.5rem;
+    .main-img {
+      > img {
+        width: 100%;
+      }
+    }
+    .main-title {
+      margin-top: 1rem;
+      font-size: 25px;
+    }
+    .main-readmore {
+      margin-top: 0.5rem;
+      color: rgb(132, 130, 131);
+      line-height: 1.6;
+      font-size: 18px;
+      .read-span {
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(243, 93, 79);
+        color: black;
+        font-weight: bold;
+        letter-spacing: 5px;
+        width: 200px;
+        height: 50px;
+        transition: color 1s ease;
+      }
+      .read-span:hover {
+        color: white;
+        background-color: black;
+      }
+    }
+  }
+  .news-breaking {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    gap: 1rem;
+    background-color: rgb(0, 0, 26);
+    color: white;
+    .news-title {
+      font-size: 20px;
+      color: rgb(235, 168, 89);
+    }
+    .news-centent {
+      line-height: 2;
+      margin-bottom: 1rem;
+    }
+  }
+  .hot-topics {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 3.5rem;
+    .topic {
+      display: flex;
+      flex-direction: row;
+
+      .topic-img {
+        > img {
+          height: 125px;
+        }
+      }
+      .topic-centent {
+        margin-left: 1.5rem;
+
+        .topic-centent-number {
+          color: rgb(236, 95, 87);
+        }
+        .topic-centent-text {
+          font-size: 15px;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    padding: 60px;
+    .header-box {
+      .header {
+        .hamburger {
+          display: none;
+        }
+        .nav {
+          display: flex;
+          gap: 1.5rem;
+        }
+      }
+    }
+  }
+}
