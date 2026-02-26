@@ -39,8 +39,12 @@ a {
 .container .main-box {
   margin-top: 2.5rem;
 }
-.container .main-box .main-img > img {
+.container .main-box .main-img {
+  background-image: url(/assets/images/image-web-3-mobile.jpg);
+  background-size: cover;
+  background-position: center;
   width: 100%;
+  height: 400px;
 }
 .container .main-box .main-title {
   margin-top: 1rem;
@@ -114,6 +118,16 @@ a {
 @media (min-width: 769px) {
   .container {
     padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "a a a" "b b e" "c d e" "f f f";
+    gap: 20px;
+  }
+  .container .header-box {
+    grid-area: a;
+  }
+  .container .header-box .header {
+    margin-bottom: 3rem;
   }
   .container .header-box .header .hamburger {
     display: none;
@@ -121,5 +135,38 @@ a {
   .container .header-box .header .nav {
     display: flex;
     gap: 1.5rem;
+  }
+  .container .main-box {
+    display: contents;
+  }
+  .container .main-box .main-img {
+    grid-area: b;
+    background-image: url(/assets/images/image-web-3-desktop.jpg);
+  }
+  .container .main-box .main-title {
+    margin-top: 0;
+    grid-area: c;
+    font-size: 35px;
+  }
+  .container .main-box .main-readmore {
+    margin-top: 0;
+    grid-area: d;
+    font-size: 25px;
+  }
+  .container .main-box .main-readmore .read-span {
+    margin-top: 2rem;
+    width: 300px;
+    height: 50px;
+    letter-spacing: 12px;
+  }
+  .container .news-breaking {
+    justify-content: space-between;
+    margin-top: 0;
+    grid-area: e;
+  }
+  .container .hot-topics {
+    grid-area: f;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }/*# sourceMappingURL=style.css.map */

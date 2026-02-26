@@ -39,9 +39,11 @@ a {
   .main-box {
     margin-top: 2.5rem;
     .main-img {
-      > img {
-        width: 100%;
-      }
+      background-image: url(/assets/images/image-web-3-mobile.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 400px;
     }
     .main-title {
       margin-top: 1rem;
@@ -121,8 +123,20 @@ a {
 @media (min-width: 769px) {
   .container {
     padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "a a a"
+      "b b e"
+      "c d e"
+      "f f f";
+    gap: 20px;
     .header-box {
+      grid-area: a;
+      // background: lightblue;
+      // grid-column: span 3;
       .header {
+        margin-bottom: 3rem;
         .hamburger {
           display: none;
         }
@@ -131,6 +145,49 @@ a {
           gap: 1.5rem;
         }
       }
+    }
+    .main-box {
+      display: contents;
+      //gpt給的進階方法，最標準還是要把大家切乾淨在第一層，不然會吃不到gird
+      //或是就用成巢狀gird
+      .main-img {
+        grid-area: b;
+        // height: 100%;
+        background-image: url(/assets/images/image-web-3-desktop.jpg);
+      }
+      .main-title {
+        margin-top: 0;
+        grid-area: c;
+        // height: 100%;
+        font-size: 35px;
+        // padding-right: 18rem;
+        // background: rgb(223, 28, 28);
+      }
+      .main-readmore {
+        margin-top: 0;
+        grid-area: d;
+        font-size: 25px;
+        .read-span {
+          margin-top: 2rem;
+          width: 300px;
+          height: 50px;
+          letter-spacing: 12px;
+        }
+        // height: 100%;
+        // background: rgb(62, 100, 76);
+      }
+    }
+    .news-breaking {
+      justify-content: space-between;
+      margin-top: 0;
+      grid-area: e;
+      // background: rgb(129, 106, 231);
+    }
+    .hot-topics {
+      grid-area: f;
+      // background: lightgray;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 }
