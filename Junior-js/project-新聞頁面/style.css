@@ -26,15 +26,26 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 .container .header-box .header .nav {
   display: none;
+  position: absolute;
+  width: 70%;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  top: 0;
+  right: 0;
 }
 .container .header-box .header .nav a:hover {
   color: red;
 }
-.container .header-box .header .nav .active {
+.container .header-box .header .nav.active {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 .container .main-box {
   margin-top: 2.5rem;
@@ -115,7 +126,7 @@ a {
   line-height: 1.6;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 900px) {
   .container {
     padding: 60px;
     display: grid;
@@ -134,7 +145,13 @@ a {
   }
   .container .header-box .header .nav {
     display: flex;
+    position: static;
+    width: auto;
+    height: auto;
     gap: 1.5rem;
+  }
+  .container .header-box .header .nav .menu-close {
+    display: none;
   }
   .container .main-box {
     display: contents;
